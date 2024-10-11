@@ -1,4 +1,4 @@
-// htmlcss progress circular bar 
+
 let htmlProgress = document.querySelector(".html-css"),
   htmlValue = document.querySelector(".html-progress");
 
@@ -19,7 +19,7 @@ let progresshtml = setInterval(() => {
   }
 }, htmlspeed);
 
-// javasript progress circular bar 
+ 
 let javascriptProgress = document.querySelector(".javascript"),
   javascriptValue = document.querySelector(".javascript-progress");
 
@@ -40,7 +40,7 @@ let progressjs = setInterval(() => {
   }
 }, jsspeed);
 
-// Get the dark mode toggle button
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('themeToggle');
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
   themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     
-    // Change the icon based on the current mode
+    
     if (document.body.classList.contains('dark-mode')) {
       icon.classList.remove('fa-moon');
       icon.classList.add('fa-sun');
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Attach the event listener to the button after the DOM has loaded
+ 
   var submitBtn = document.getElementById("submitBtn"); 
   submitBtn.addEventListener("click", sendMail);
 
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const number = document.querySelector("#number").value;
       const message = document.querySelector("#msg").value;
     
-      // Prepare the template parameters for EmailJS
+      
       const templateParams = {
           name: name,
           email: email,
@@ -81,13 +81,13 @@ document.addEventListener("DOMContentLoaded", function() {
           message: message,
       };
     
-      // Send the email using EmailJS
+     
       emailjs.send('service_gjz56v5', 'template_jcllt8l', templateParams)
           .then(function(response) {
               console.log('SUCCESS!', response.status, response.text);
               alert("Email sent successfully!");
 
-              // Reset the form fields
+              
               document.querySelector("#name").value = '';
               document.querySelector("#email").value = '';
               document.querySelector("#number").value = '';
